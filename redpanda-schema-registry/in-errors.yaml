@@ -1,0 +1,35 @@
+http:
+  enabled: false
+input:
+  broker:
+    inputs:
+      - generate:
+          interval: 2s
+          mapping: |
+            root.ID = uuid_v4()
+            root.Name = [ "frosty", "spot", "oodles" ].index(random_int() % 3)
+            root.Gooeyness = (random_int() % 100) / 100
+#            root.Bouncing = random_int() % 2 == 0
+      - generate:
+          interval: 10s
+          mapping: |
+            root.Error = uuid_v4()
+            root.ErrorName = [ "frosty", "spot", "oodles" ].index(random_int() % 3)
+pipeline:
+  processors:
+    - schema_registry_encode:
+        url: http://redpanda:8081
+        subject: benthos_example
+        refresh_period: 15s
+output:
+  switch:
+    cases:
+      - check: errored()
+        output:
+          kafka:
+            addresses: [ redpanda:29092 ]
+            topic: benthos_errors
+      - output:
+          kafka:
+            addresses: [ redpanda:29092 ]
+            topic: benthos_redpanda
