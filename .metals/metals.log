@@ -1,0 +1,23 @@
+2023.12.21 19:23:00 INFO  Started: Metals version 1.1.0+149-5f1a2d86-SNAPSHOT in folders 'C:\Users\cmcarreno\Documents\Proyectos\benthos-redpanda-examples' for client Visual Studio Code 1.85.1.
+2023.12.21 19:23:02 WARN  Build server is not auto-connectable.
+2023.12.21 19:23:02 WARN  no build tool detected in workspace 'C:\Users\cmcarreno\Documents\Proyectos\benthos-redpanda-examples'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.21 19:23:02 WARN  no build target for: C:\Users\cmcarreno\Downloads\InfluxDBDataWriter.scala
+2023.12.21 19:23:08 INFO  no build target found for C:\Users\cmcarreno\Downloads\InfluxDBDataWriter.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.21 19:23:11 INFO  time: code lens generation in 8.63s
+dic 21, 2023 7:57:25 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 70
+dic 21, 2023 8:24:24 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 124
+2023.12.22 09:07:28 INFO  Started: Metals version 1.1.0+149-5f1a2d86-SNAPSHOT in folders 'C:\Users\cmcarreno\Documents\Proyectos\benthos-redpanda-examples' for client Visual Studio Code 1.85.1.
+2023.12.22 09:07:33 WARN  Build server is not auto-connectable.
+2023.12.22 09:07:33 WARN  no build tool detected in workspace 'C:\Users\cmcarreno\Documents\Proyectos\benthos-redpanda-examples'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.22 09:07:33 WARN  no build target for: C:\Users\cmcarreno\Downloads\InfluxDBDataWriter.scala
+2023.12.22 09:07:39 INFO  no build target found for C:\Users\cmcarreno\Downloads\InfluxDBDataWriter.scala. Using presentation compiler with project's scala-library version: 3.3.1
+dic 22, 2023 9:07:39 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.12.22 09:07:41 INFO  time: code lens generation in 8.1s
+2023.12.22 09:07:41 INFO  time: code lens generation in 2.2s
+2023.12.22 09:07:41 INFO  time: code lens generation in 2.16s
+2023.12.22 10:14:45 INFO  Shutting down server
+2023.12.22 10:14:45 INFO  shutting down Metals
+2023.12.22 10:14:45 INFO  Exiting server
