@@ -9,7 +9,7 @@ schema = {
       { "name": "ID", "type": "string" },
       { "name": "Name", "type": "string" },
       { "name": "Gooeyness", "type": "double", "default": 0 },
-#      { "name": "Bouncing", "type": "boolean", "default": True }
+      { "name": "Bouncing", "type": "boolean", "default": True }
     ]
 }
 base_uri = "http://localhost:8081"

@@ -1,0 +1,32 @@
+http:
+  enabled: false
+
+input:
+  kafka:
+    addresses: [ redpanda:29092 ]
+    consumer_group: benthos_consumer_group
+    topics: [ benthos_scylla ]
+
+pipeline:
+  processors:
+    - mapping: |
+        root.id = this.ID
+        root.name = this.Name
+        root.gooeyness = this.Gooeyness
+        root.bouncing = this.Bouncing
+
+output:
+  cassandra:
+    addresses:
+      - scylla:9042
+    query: 'INSERT INTO foo.bar (id, name, gooeyness, bouncing) VALUES (?, ?, ?, ?)'
+    args_mapping: |
+      root = [
+        this.id,
+        this.name,
+        this.gooeyness,
+        this.bouncing
+      ]
+    batching:
+      count: 5
+      period: 5s
